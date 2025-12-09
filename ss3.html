@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="ss3.css">
+</head>
+<body >
+
+    <header class="main-header">
+
+        <h1 class="site-title">Movie Finder</h1>
+
+        <div class="header-actions">
+            <div class="lightandDArk ">
+                <span class="icon moon">🌙</span>
+                <span class="icon sun">☀️</span>
+            </div>
+            <button id="showMyWatchlist" class="watchlist-btn">My Watchlist</button>
+        </div>  
+        
+    </header>
+
+    <div class="searchPar">
+        <input type="text" placeholder="What is the name of the film ..?">
+        <button class="search">search</button>
+        <button class="filter">
+            <svg fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
+            </svg>
+            Filter
+        </button>
+    </div>
+    <div class="filter-panel ">
+        <div class="filter-title">
+            filter panel <button class="closePanel">✕</button>
+        </div>
+        <div class="filter-option">
+            <label for="filter-year">Year:</label>
+            <input type="text" id="filter-year" placeholder="e.g., 2023">
+        </div>
+        <div class="filter-option">
+            <label for="filter-genre">Genre:</label>
+            <input type="text" id="filter-genre" placeholder="e.g., Action">
+        </div>
+        <div class="filter-option">
+            <label for="filter-actor">Actor:</label>
+            <input type="text" id="filter-actor" placeholder="e.g., Tom Hanks">
+        </div>
+        <div class="twoButtons">
+            <button class="apply-filter-btn">Apply Filters</button>
+            <button class="clear-filter-btn">Clear Filters</button>
+        </div>
+        </div>
+    <div class="movieContainerAndReadMore">
+        <div class="movies-container">
+            </div>
+        <button class="displayMore">Display More</button>
+    </div>
+
+    <div class="nothing"> </div>
+
+    <div class="overlay">
+        <div class="content">
+            <button class="x">✕</button>
+            <div class="dataDetails">
+                <img src="https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_SX300.jpg" alt="Movie Poster" class="dummy-poster" loading="lazy">
+                <div class="details">
+                    <h2></h2>
+                    <div class="dummy-rating-box">
+                    </div>
+                    <p class="dummy-plot">
+                    </p>
+                    <div class="dummy-other-details">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="button">
+        <svg viewBox="0 0 384 512" class="svgIcon">
+        <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        ></path>
+        </svg>
+    </button>
+    <div class="AddingAndREmovungFIlm">
+        
+    </div>
+
+    <script src="ss3.js"></script>
+</body>
+</html>
